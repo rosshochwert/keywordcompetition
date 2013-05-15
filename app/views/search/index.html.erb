@@ -1,0 +1,21 @@
+<h1>Search#index</h1>
+<p>Find me in app/views/search/index.html.erb</p>
+
+<table border=".5">
+	<tr>
+	<td>Entered URL</td>
+	<td>External Links SEOMoz</td>
+	<td>Total Links SEOMoz</td>
+	<td>Domain Creation Date</td>
+	<td>Rank</td>
+	</tr>
+
+	<tr>
+	<td><%= @responseURL.data[:url] %></td>
+	<td><%= @responseURL.data[:external_links] %></td>
+	<td><%= @responseURL.data[:links] %></td>
+	<td><%= @domain.creation_date %></td>
+	<td><%= @rank %></td>
+	</tr>
+
+</table>

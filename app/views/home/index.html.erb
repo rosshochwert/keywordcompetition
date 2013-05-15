@@ -1,0 +1,10 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<%= form_tag("/search", :method => "get") do %>
+  <%= label_tag(:keyword, "URL") %>
+  <%= text_field_tag(:keyword) %>  
+  <%= label_tag(:keywordZ, "Keyword") %>
+  <%= text_field_tag(:keywordZ) %>  
+  <%= submit_tag("Search") %>
+<% end %>
